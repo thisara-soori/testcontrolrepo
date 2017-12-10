@@ -1,5 +1,5 @@
 class testing::service (
-String $srvicename = "httpd",
+  String $srvicename = "httpd",
 ) {
   service { "${srvicename}":
     ensure => running,
@@ -9,5 +9,4 @@ String $srvicename = "httpd",
     # pattern => 'name',
     require => Class ['testing::install'],
   }
-}
 }
