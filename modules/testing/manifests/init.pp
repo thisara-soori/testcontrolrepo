@@ -1,6 +1,6 @@
 class testing {
   # resources
-  include install,
-  include service,
-  include configuration,
+  include testing::install,
+  include testing::service,
+  include testing::configuration,
 }
