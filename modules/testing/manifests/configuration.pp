@@ -5,10 +5,10 @@ Int $httpdPort
   file { '/etc/httpd/conf/httpd.conf':
     ensure => file,
     mode => '0644',
-    content => template('httpd/httpd.conf.erb'),
+    content => epp('testing/httpd.conf.epp',90),
     #content => template('httpd/httpd.conf.erb'),
     #require => ['httpd::install'],
-    notify => Class ['httpd::httpdservice'],
+    #notify => Class ['httpd::httpdservice'],
   }
 
 }
