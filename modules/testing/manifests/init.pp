@@ -1,8 +1,6 @@
-class testing (
-  $package_name
-  ){
+class testing {
   # resources
-  package { "${package_name}":
-    ensure => installed,
-  }
+  include install,
+  include service,
+  include configuration,
 }
