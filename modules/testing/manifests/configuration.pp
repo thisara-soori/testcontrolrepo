@@ -1,5 +1,5 @@
 class testing::configuration (
-Int $httpdPort
+Integer  $httpdPort
 ) {
   # resources
   file { '/etc/httpd/conf/httpd.conf':
