@@ -8,7 +8,7 @@ Int $httpdPort
     content => epp('testing/httpd.conf.epp',90),
     #content => template('httpd/httpd.conf.erb'),
     #require => ['httpd::install'],
-    notify => Class ['testing::service'],
+    notify => Class['testing::service'],
   }
 
 }
