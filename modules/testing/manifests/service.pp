@@ -4,6 +4,6 @@ class testing::service {
     enable     => true,
     hasrestart => true,
     hasstatus  => true,
-    require    => Class ['testing::install'],
+    require    => Class['testing::install'],
   }
 }
