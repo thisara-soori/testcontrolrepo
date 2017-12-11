@@ -1,5 +1,5 @@
 class testing (
-Integer  $httpdPort = 90,
+Integer  $httpd_port = 90,
 ) {
   # resources
   include testing::install
