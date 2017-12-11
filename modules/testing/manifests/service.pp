@@ -1,7 +1,5 @@
-class testing::service (
-  String $srvicename = "httpd",
-) {
-  service { "${srvicename}":
+class testing::service {
+  service { 'httpd':
     ensure     => running,
     enable     => true,
     hasrestart => true,
