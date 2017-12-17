@@ -1,6 +1,6 @@
 class system::classroom {
   # export a virtual host resource for yourself
-  @@host { "$facts['fqdn']":
+  @@host { "$::fqdn":
     ensure => 'present',
     host_aliases => [$::hostname],
     ip => $::ipaddress,
