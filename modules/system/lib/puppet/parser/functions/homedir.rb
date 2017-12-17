@@ -6,7 +6,7 @@ module Puppet::Parser::Functions
         :arity => 1
         ) do |args|
         raise ArgumentError, 'Expects a string' unless args.first.is_a? String
-        username = args[0]
+        user = args[0]
           case user
             when 'root'
             return '/root'
