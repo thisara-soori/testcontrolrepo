@@ -2,7 +2,7 @@ class webapp (
     String $docroot = "/var/www/html",
     String $app_name = "webapp"
     
-) {
+) inherits webapp::params {
     include mysql::server
     class { 'mysql::bindings':
         php_enable => true,
