@@ -1,7 +1,7 @@
 class webapp::wordpress {
  
   #include ::wordpress
-  class { 'wordpress'
+  class { 'wordpress':
     install_url => "http://10.0.2.15",
   }
   
