@@ -4,6 +4,6 @@
 
 Facter.add('default_realm') do
   setcode do
-    Facter::Core::Execution.exec("/usr/bin/awk '/default_realm/{print $NF}' /etc/krb5.conf")
+    Facter::Core::Execution.exec("/usr/bin/awki '/default_realm/{print $NF}' /etc/krb5.conf")
   end
 end
